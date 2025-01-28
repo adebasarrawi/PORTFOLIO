@@ -85,7 +85,8 @@ ul{
         opacity: 0.8;
         font-size: 70px;
         font-weight: 700;
-         margin-top: 15px;
+         margin-top: 20px;
+         margin-bottom: 0px;
         padding: 5px 20px 5px 20px;
         background-color: white;
     }
@@ -93,6 +94,8 @@ ul{
         display: flex;
         margin-left: 150px;
         gap: 10px;
+        margin-top: 10px;
+        
     }
     .section2-div2-item {
         display: flex;
@@ -127,31 +130,46 @@ ul{
     .section2-div1-item2{
         color: rgb(232, 71, 98) ;
     }
-    .nav-side{
-        display: block;
-    }
-    .nav-side i{
-        font-size: 15px;
-        color: rgb(112, 99, 99);
-    }
-    .nav-side ul li a{
-        list-style: none;
-        padding:10px;
-        color: rgb(112, 99, 99);
-        text-decoration: none;
-    }
-    .nav-side ul li{
-        margin-bottom:10px;
-    }
-    .nav-side ul li a.active {
-        color: white; 
-        font-weight: 700;
-    }
     
-    .nav-side ul li:hover a:hover {
-        color: white;
-        font-weight: 700;
-    }
+
+.nav-side {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: white;
+    padding: 10px;
+    width: fit-content; 
+    margin: 0 auto; 
+    margin-top: 20px;
+    border-radius: 25px; 
+}
+
+.nav-side ul {
+    display: flex; 
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+}
+
+.nav-side ul li {
+    margin: 0 10px; 
+}
+
+.nav-side ul li a {
+    font-size: 20px; 
+    color: rgb(112, 99, 99); 
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+}
+
+.nav-side ul li a.active {
+    color: #871616;
+}
+
+.nav-side ul li:hover a {
+    color:  #871616;
+}
+
     /* Responsive adjustments */
 @media only screen and (max-width: 768px) {
     .container {
@@ -175,24 +193,7 @@ ul{
         width: 80%;
         margin-bottom: 20px;
     }
-    .nav-side {
-        width: 100%;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
-    .nav-side ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .nav-side ul li {
-        margin: 5px;
-        font-size: 12px; 
-    }
     .nav-side ul li a {
-        padding: 5px 8px;
-        font-size: 12px; 
+        font-size: 16px;
     }
 }

@@ -90,136 +90,175 @@ ul{
         padding: 5px 20px 5px 20px;
         background-color: white;
     }
- .contact{
-    display: flex;
-    gap: 90px;
- }
- .text{
-    margin: 0;
-    margin-top: 120px;
-    margin-left: 40px;
- }
- 
- 
- form{
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    font-weight: 700;
- }
- form input , form textarea , form button{
-   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border: 2px solid rgb(128, 72, 72);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 250px; 
-    padding: 8px; 
-    margin-bottom: 10px;
-    border-radius: 20px;
-}
-form button{
-    background-color: rgb(194, 120, 120);
-    color: white;
-    border-radius: 20px;
-    font-weight: 700;
-}
-form button:hover{
-    background-color: rgb(209, 92, 104);
-    color: black;
-   
-}
-.fa-heart{
-    color: rgb(209, 92, 104);
-}
-.scm{
-    margin: 0;
-    margin-top: 20px;
-  }
-  .scm a{
-
-     padding-left: 10px;
-     font-size: 30px;
-     color:white ;
-  }
-  .scm a:hover{
-     color:  rgb(209, 92, 104);
-  }
-  .nav-side i{
-    font-size: 15px;
-    color: rgb(112, 99, 99);
-}
-.nav-side ul li a{
-    list-style: none;
-    padding:10px;
-    color: rgb(112, 99, 99);
-    text-decoration: none;
-}
-.nav-side ul li{
-    margin-bottom:10px;
-}
-.nav-side ul li a.active {
-    color: white; 
-    font-weight: 700;
-}
-
-.nav-side ul li:hover a:hover {
-    color: white;
-    font-weight: 700;
-}
-.footer-bottom p{
-    color: #6e6e6b;
-    text-align: center;
-    font-size: 12px;
-    margin-top: 70px;
-    margin-right: 100px;
-}
-/* Responsive adjustments */
-@media only screen and (max-width: 768px) {
-    .title h1 {
-        font-size: 2rem;
-        padding: 10px;
+    .contact {
+        display: flex;
+        align-items: flex-start;
+        gap: 90px; 
+        margin: 40px;
+        margin-left: 300px;
     }
+    
+    .text {
+        flex: 1;
+        max-width: 300px; 
+    }
+    
+    .text p {
+        font-size: 16px;
+        color: #333;
+        text-align: justify;
+        line-height: 1.6;
+        word-spacing: 2px;
+    }
+    
+    
+    form {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 15px; 
+    }
+    
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+        width: 100%;
+    }
+    
+    label {
+        font-weight: bold;
+        margin-bottom: 5px;
+        width: 100%;
+        text-align: left;
+    }
+    
+    form input, form textarea, form button {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border: 2px solid rgb(128, 72, 72);
+        width: 250px;
+        padding: 8px;
+        border-radius: 20px;
+    }
+    
+    form button {
+        background-color: rgb(194, 120, 120);
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    form button:hover {
+        background-color: rgb(209, 92, 104);
+        color: black;
+    }
+    
+   
+    .scm {
+        margin-top: 20px;
+    }
+    
+    .scm a {
+        padding-left: 8px;
+        font-size: 28px;
+        color: rgb(128, 72, 72); 
+    }
+    
+    .scm a:hover {
+        color: white;
+    }
+     
+    .fa-heart{
+        color: rgb(161, 72, 72);
+    }
+    
+.nav-side {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: white;
+    padding: 10px;
+    width: fit-content; 
+    margin: 0 auto; 
+    margin-top: 20px;
+    border-radius: 25px; 
+}
+
+.nav-side ul {
+    display: flex; 
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+}
+
+.nav-side ul li {
+    margin: 0 10px; 
+}
+
+.nav-side ul li a {
+    font-size: 20px; 
+    color: rgb(112, 99, 99); 
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+}
+
+.nav-side ul li a.active {
+    color: #871616;
+}
+
+.nav-side ul li:hover a {
+    color:  #871616;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .contact {
+        margin-left: 200px;
+    }
+}
+
+@media (max-width: 992px) {
+    .contact {
+        margin-left: 100px;
+    }
+
+    .title h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 768px) {
     .contact {
         flex-direction: column;
         align-items: center;
+        margin-left: 0;
+        gap: 30px;
     }
+
     .text {
-        text-align: center;
-        margin: 20px 0;
-    }
-    form {
-        width: 100%;
-        max-width: 400px;
+        max-width: 100%;
         text-align: center;
     }
+
+    .title h1 {
+        font-size: 40px;
+    }
+
     form input, form textarea, form button {
-        width: 90%;
-        margin: 5px auto;
-    }
-    .nav-side {
-        width: 100%;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
-    .nav-side ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .nav-side ul li {
-        margin: 5px;
-        font-size: 12px; 
-    }
-    .nav-side ul li a {
-        padding: 5px 8px;
-        font-size: 12px; 
-    }
-    .footer-bottom p{
-        color: #6e6e6b;
-        text-align: center;
-        font-size: 10px;
-        margin-top: 20px;
+        max-width: 100%;
     }
 }
 
+@media (max-width: 576px) {
+    .title h1 {
+        font-size: 30px;
+    }
+
+    .nav-side ul li a {
+        font-size: 16px;
+    }
+
+    .scm a {
+        font-size: 24px;
+    }
+}
