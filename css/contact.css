@@ -13,6 +13,10 @@ version:1
     --main-color:gray;
     --secondary-color:#434342;
     --text-color:white;
+    --accent-color: #6c3a44;
+    --gradient-start: #a3886d3f;
+    --gradient-end: #ffffff;
+
 }
 *{
     font-family: "Poppins", serif;
@@ -171,44 +175,65 @@ ul{
     .fa-heart{
         color: rgb(161, 72, 72);
     }
-    
+ 
 .nav-side {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: white;
     padding: 10px;
-    width: fit-content; 
-    margin: 0 auto; 
-    margin-top: 20px;
-    border-radius: 25px; 
+    width: fit-content;
+    margin: 40px auto;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-side:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .nav-side ul {
-    display: flex; 
-    list-style: none; 
+    display: flex;
+    list-style: none;
     margin: 0;
     padding: 0;
 }
 
 .nav-side ul li {
-    margin: 0 10px; 
+    margin: 0 10px;
 }
 
 .nav-side ul li a {
-    font-size: 20px; 
-    color: rgb(112, 99, 99); 
-    text-decoration: none; 
-    transition: color 0.3s ease; 
+    font-size: 20px;
+    color: rgb(112, 99, 99);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, rgba(135, 22, 22, 0.1), rgba(255, 255, 255, 0.1));
+    transition: all 0.3s ease;
 }
 
 .nav-side ul li a.active {
-    color: #871616;
+    color: var(--accent-color);
+    background: linear-gradient(135deg, rgba(135, 22, 22, 0.2), rgba(255, 255, 255, 0.2));
 }
 
 .nav-side ul li:hover a {
-    color:  #871616;
+    color: var(--accent-color);
+    background: linear-gradient(135deg, rgba(135, 22, 22, 0.2), rgba(255, 255, 255, 0.2));
+    transform: scale(1.1);
 }
+
+
+/* Responsive Styles */
 
 /* Responsive Styles */
 @media (max-width: 1200px) {
